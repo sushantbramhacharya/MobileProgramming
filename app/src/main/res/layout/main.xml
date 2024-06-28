@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:src="@drawable/wrangler" />
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/konnichiwa"
+        android:textSize="50sp"
+        android:textColor="@color/textColor"/>
+
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="text"
+        android:textColor="@color/textColor"
+        android:hint="User Name"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edt_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="text"
+        android:textColor="@color/textColor"
+        android:hint="Phone Number"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="textPassword"
+        android:textColor="@color/textColor"
+        android:hint="Password"
+        android:textSize="20sp"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Choose Faculi\ty"
+        android:textSize="25sp"
+        android:textColor="@color/textColor"/>
+
+    <CheckBox
+        android:id="@+id/BCA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BCA"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/BE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B-E"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Choose Gender"
+        android:textSize="25sp"
+        android:textColor="@color/textColor"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:id="@+id/gender_radio"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/male_radio"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/female_radio"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:id="@+id/other_radio"
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Select Semester"
+        android:textSize="25sp"
+        android:textColor="@color/textColor"/>
+
+    <Spinner
+        android:id="@+id/Semester_Selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/Semester"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/Button_Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/textColor"
+        android:layout_marginLeft="160sp"
+        android:textColor="@color/black"
+        android:text="Submit"/>
+
+
+</LinearLayout>
